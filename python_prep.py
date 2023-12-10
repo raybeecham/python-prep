@@ -12,29 +12,36 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Add up the numbers in a list using a for-loop
 def exercise_1(S):
+    # TODO: Add up the numbers in s using a for-loop and return the sum.
+    total = 0
+    for number in S:
+        total += number
+    return total
 
-    # TODO: Add up the numbers in S using a for-loop and return the sum.
-
-    return 
-
+# Add up the numbers in a list using the sum() function
 def exercise_2(S):
-
     # TODO: Add up the numbers in S in 2 lines or less and return the sum.
+    total = sum(S)
 
-    return 
+    return total
 
+# Build a dictionary with keys as tuples of points (x, y) and values as the value of a function f = 8x + 3y
 def exercise_3():
-
     # TODO: Build a dictionary with:
     #  - keys: tuple of points (x, y)
     #  - values: value of function f = 8x + 3y
+    total = {}
+    for x in range(5):
+        for y in range(5):
+            total[(x, y)] = 8 * x + 3 * y
 
-    return 
+    return total
+
 
 # ------- Main program -------
 if __name__ == "__main__":
-
     S = [1, 2, 3, 4, 5]
 
     print("\nExercise 1:")
